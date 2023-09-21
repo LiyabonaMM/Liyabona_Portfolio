@@ -4,7 +4,7 @@
 body {
   color: #797979;
   background: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inconsolata", "Courier New", Courier, monospace;
 }
 
 h1,
@@ -253,8 +253,7 @@ a:focus {
   margin-bottom: 45px;
   padding: 120px 0 0 0;
   overflow: hidden;
-  background: linear-gradient(rgba(239, 35, 60, 0.95), rgba(239, 35, 60, 0.95)),
-    url(../img/hero-bg.jpg);
+  background: linear-gradient(black, black), url(../img/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -320,7 +319,7 @@ a:focus {
 
 .hero .hero-btn .btn {
   margin-top: 35px;
-  color: #ef233c;
+  color: black;
   background: #ffffff;
   box-shadow: inset 0 0 0 50px #ffffff;
 }
