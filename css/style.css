@@ -1,9 +1,15 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+body::-webkit-scrollbar {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+  display: none;
+}
 body {
-  color: #797979;
-  background: #ffffff;
+  color: black; /* Set text color to white */
+  background: white; /* Set background color to black */
   font-family: "Inconsolata", "Courier New", Courier, monospace;
 }
 
@@ -24,7 +30,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #ef233c;
+  color: #CD5C08;
   outline: none;
   text-decoration: none;
 }
@@ -44,20 +50,20 @@ a:focus {
   font-weight: 600;
   letter-spacing: 1px;
   color: #ffffff;
-  background: #ef233c;
+  background: #CD5C08;
   border: 2px solid transparent;
   border-radius: 0;
-  box-shadow: inset 0 0 0 50px #ef233c;
+  box-shadow: inset 0 0 0 50px #CD5C08;
   transition: ease-out 0.3s;
   -webkit-transition: ease-out 0.3s;
   -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-  color: #ef233c;
+  color: #CD5C08;
   background: transparent;
-  box-shadow: inset 0 0 0 0 #ef233c;
-  border-color: #ef233c;
+  box-shadow: inset 0 0 0 0 #CD5C08;
+  border-color: #CD5C08;
 }
 
 #loader {
@@ -91,7 +97,7 @@ a:focus {
   width: 45px;
   height: 45px;
   border: 5px solid #dddddd;
-  border-top: 5px solid #ef233c;
+  border-top: 5px solid #CD5C08;
   border-radius: 50%;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
@@ -144,6 +150,7 @@ a:focus {
   position: relative;
   transition: 0.5s;
   z-index: 999;
+  background: #000000; /* Set background color to black */
 }
 
 .navbar.nav-sticky {
@@ -151,6 +158,7 @@ a:focus {
   top: 0;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background: #000000; /* Set background color to black */
 }
 
 .navbar .navbar-brand {
@@ -160,6 +168,7 @@ a:focus {
   font-weight: 700;
   letter-spacing: 2px;
   transition: 0.5s;
+  color: #ffffff; /* Set text color to white */
 }
 
 .navbar .navbar-brand img {
@@ -186,21 +195,21 @@ a:focus {
 
   .navbar.nav-sticky {
     padding: 10px 60px;
-    background: #ffffff !important;
+    background: #000000 !important; /* Set background color to black */
   }
 
   .navbar .navbar-brand {
-    color: #ffffff;
+    color: #ffffff; /* Set text color to white */
   }
 
   .navbar.nav-sticky .navbar-brand {
-    color: #ef233c;
+    color: #CD5C08;
   }
 
   .navbar-light .navbar-nav .nav-link,
   .navbar-light .navbar-nav .nav-link:focus {
     padding: 10px 10px 8px 10px;
-    color: #ffffff;
+    color: #ffffff; /* Set text color to white */
     font-size: 15px;
     font-weight: 500;
   }
@@ -217,18 +226,18 @@ a:focus {
 
   .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
   .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-    color: #ef233c;
+    color: #CD5C08;
   }
 }
 
 @media (max-width: 991.98px) {
   .navbar {
     padding: 15px;
-    background: #ffffff !important;
+    background: white !important; /* Set background color to black */
   }
 
   .navbar .navbar-brand {
-    color: #ef233c;
+    color: #CD5C08;
   }
 
   .navbar .navbar-nav {
@@ -443,7 +452,7 @@ a:focus {
   top: 11px;
   right: 0;
   left: -30px;
-  background: #ef233c;
+  background: #CD5C08;
   z-index: -1;
 }
 
@@ -454,7 +463,7 @@ a:focus {
   height: 3px;
   top: 11px;
   left: 3px;
-  background: #ef233c;
+  background: #CD5C08;
   z-index: 1;
 }
 
@@ -535,7 +544,7 @@ a:focus {
 
 .about .progress .progress-bar {
   width: 0px;
-  background: #ef233c;
+  background: #CD5C08;
   border-radius: 10px;
   transition: 2s;
 }
@@ -556,7 +565,11 @@ a:focus {
 .experience {
   position: relative;
   padding: 45px 0 15px 0;
+  background: white; /* Set a light gray background color */
+  color: black; /* Set text color to white */
 }
+
+/* Rest of your CSS rules... */
 
 .experience .timeline {
   position: relative;
@@ -567,7 +580,7 @@ a:focus {
   content: "";
   position: absolute;
   width: 2px;
-  background: #ef233c;
+  background: #CD5C08;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -599,7 +612,7 @@ a:focus {
   top: 48px;
   right: -8px;
   background: #ffffff;
-  border: 2px solid #ef233c;
+  border: 2px solid #CD5C08;
   border-radius: 16px;
   z-index: 1;
 }
@@ -631,7 +644,7 @@ a:focus {
   top: 44px;
   font-size: 16px;
   font-weight: 600;
-  color: #ef233c;
+  color: #CD5C08;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -744,7 +757,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-  box-shadow: inset 800px 0 0 0 #ef233c;
+  box-shadow: inset 800px 0 0 0 #CD5C08;
 }
 
 .service .service-icon {
@@ -754,14 +767,14 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ef233c;
+  border: 1px solid #CD5C08;
   background: #ffffff;
 }
 
 .service .service-icon i {
   position: relative;
   font-size: 60px;
-  color: #ef233c;
+  color: #CD5C08;
   transition: 0.3s;
 }
 
@@ -803,46 +816,13 @@ a:focus {
     font-size: 14px;
   }
 }
-
 /*******************************/
 /******** Portfolio CSS ********/
 /*******************************/
 .portfolio {
   position: relative;
   padding: 45px 0 15px 0;
-}
-
-.portfolio #portfolio-filter {
-  padding: 0;
-  margin: -15px 0 25px 0;
-  list-style: none;
-  font-size: 0;
-  text-align: center;
-}
-
-.portfolio #portfolio-filter li {
-  cursor: pointer;
-  display: inline-block;
-  margin: 5px;
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #ffffff;
-  background: #ef233c;
-  border: 2px solid transparent;
-  border-radius: 0;
-  box-shadow: inset 0 0 0 50px #ef233c;
-  transition: ease-out 0.3s;
-  -webkit-transition: ease-out 0.3s;
-  -moz-transition: ease-out 0.3s;
-}
-
-.portfolio #portfolio-filter li:hover,
-.portfolio #portfolio-filter li.filter-active {
-  color: #ef233c;
-  background: transparent;
-  box-shadow: inset 0 0 0 0 #ef233c;
-  border-color: #ef233c;
+  background: #f8f9fa; /* Set a light gray background color */
 }
 
 .portfolio .portfolio-item {
@@ -895,20 +875,26 @@ a:focus {
 .portfolio .portfolio-text a.btn {
   width: 50px;
   height: 50px;
-  padding: 0 0 2px 1px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 45px;
-  font-weight: 100;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: #CD5C08; /* Set button background color */
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: ease-out 0.3s;
 }
 
-.portfolio .portfolio-item:hover a.btn {
-  color: #ef233c;
+.portfolio .portfolio-text a.btn:hover {
+  color: #CD5C08; /* Change text color on hover */
   background: transparent;
-  box-shadow: inset 0 0 0 0 #ef233c;
-  border-color: #ef233c;
+  border-color: #CD5C08; /* Change border color on hover */
 }
+
 
 /*******************************/
 /********* Banner CSS **********/
@@ -918,7 +904,7 @@ a:focus {
   width: 100%;
   margin: 45px 0;
   padding: 90px 0;
-  background: #ef233c;
+  background: #CD5C08;
 }
 
 .banner .container {
@@ -955,7 +941,7 @@ a:focus {
 
 .banner .banner-text .btn {
   margin-top: 15px;
-  color: #ef233c;
+  color: #CD5C08;
   background: #ffffff;
   box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -967,243 +953,6 @@ a:focus {
   border-color: #ffffff;
 }
 
-/*******************************/
-/********* Pricing CSS *********/
-/*******************************/
-.price {
-  position: relative;
-  width: 100%;
-  padding: 45px 0 15px 0;
-}
-
-.price .row {
-  padding: 0 15px;
-}
-
-.price .col-md-4 {
-  padding: 0;
-}
-
-.price .price-item {
-  position: relative;
-  margin-bottom: 30px;
-  background: #ffffff;
-}
-
-.price .featured-item {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.price .price-header,
-.price .price-body,
-.price .price-footer {
-  position: relative;
-  text-align: center;
-}
-
-.price .price-header {
-  padding: 45px 0 30px 0;
-  color: #414141;
-}
-
-.price .price-item.featured-item .price-header {
-  color: #ef233c;
-}
-
-.price .price-title h2 {
-  font-size: 25px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.price .price-prices h2 {
-  font-size: 45px;
-  font-weight: 700;
-  margin-left: 10px;
-}
-
-.price .price-prices h2 small {
-  position: absolute;
-  font-size: 18px;
-  font-weight: 400;
-  margin-top: 9px;
-  margin-left: -12px;
-}
-
-.price .price-prices h2 span {
-  margin-left: 1px;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.price .price-item.featured-item h2 {
-  color: #ef233c;
-}
-
-.price .price-body {
-  padding: 0 0 20px 0;
-}
-
-.price .price-description ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.price .price-description ul li {
-  padding: 0 0 20px 0;
-}
-
-.price .price-item .price-action {
-  padding-bottom: 45px;
-}
-
-.price .price-item .price-action .btn {
-  color: #ffffff;
-  background: #414141;
-  box-shadow: inset 0 0 0 50px #414141;
-}
-
-.price .price-item .price-action .btn:hover {
-  color: #414141;
-  background: transparent;
-  box-shadow: inset 0 0 0 0 #414141;
-  border-color: #414141;
-}
-
-.price .price-item.featured-item .price-action .btn {
-  color: #ffffff;
-  background: #ef233c;
-  box-shadow: inset 0 0 0 50px #ef233c;
-}
-
-.price .price-item.featured-item .price-action .btn:hover {
-  color: #ef233c;
-  background: transparent;
-  box-shadow: inset 0 0 0 0 #ef233c;
-  border-color: #ef233c;
-}
-
-/*******************************/
-/*********** Team CSS **********/
-/*******************************/
-.team {
-  position: relative;
-  width: 100%;
-  padding: 45px 0 15px 0;
-}
-
-.team .team-item {
-  position: relative;
-  background: #ffffff;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  box-shadow: inset 0 0 0 0 transparent;
-  transition: ease-out 0.5s;
-}
-
-.team .team-img {
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-}
-
-.team .team-img img {
-  position: relative;
-  width: 100%;
-  transition: 0.5s;
-}
-
-.team .team-text {
-  position: relative;
-  width: 50%;
-  padding: 0 30px;
-}
-
-.team .team-text h2 {
-  color: #ef233c;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  transition: 1s;
-}
-
-.team .team-text h4 {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  transition: 1s;
-}
-
-.team .team-text p {
-  margin-bottom: 20px;
-  transition: 1s;
-}
-
-.team .team-social {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.team .team-social a.btn {
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: normal;
-  margin-right: 5px;
-}
-
-.team .team-item:hover {
-  box-shadow: inset 800px 0 0 0 #ef233c;
-}
-
-.team .team-item:hover .team-img img {
-  transform: scale(1.2);
-}
-
-.team .team-item:hover .team-text h2,
-.team .team-item:hover .team-text h4,
-.team .team-item:hover .team-text p {
-  color: #ffffff;
-}
-
-.team .team-item:hover .team-social a.btn {
-  background: #ffffff;
-}
-
-.team .team-item:hover .team-social a.btn:hover {
-  border-color: #ffffff;
-}
-
-@media (max-width: 575.98px) {
-  .team .team-text {
-    padding: 0 15px;
-  }
-
-  .team .team-text h2 {
-    font-size: 16px;
-    margin-bottom: 0;
-  }
-
-  .team .team-text h4 {
-    margin-bottom: 5px;
-  }
-
-  .team .team-text p {
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 10px;
-  }
-}
 
 /*******************************/
 /******* Testimonial CSS *******/
@@ -1212,7 +961,7 @@ a:focus {
   position: relative;
   margin: 45px 0;
   padding: 90px 0;
-  background: #ef233c;
+  background: black;
 }
 
 .testimonial .container {
@@ -1264,7 +1013,7 @@ a:focus {
 }
 
 .testimonial .testimonial-text h3 {
-  color: #ef233c;
+  color: #CD5C08;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -1301,32 +1050,18 @@ a:focus {
   position: relative;
   width: 100%;
   margin: 45px 0;
-  background: #ef233c;
-}
-
-.contact .container-fluid {
-  background: url(../img/contact.jpg) left center no-repeat;
-  background-size: contain;
+  background: black;
+  padding: 90px 0;
 }
 
 .contact .contact-form {
   position: relative;
-  padding: 90px 0 90px 45px;
-  background: #ef233c;
+  background: black;
 }
 
-.contact .contact-form input {
-  color: #ffffff;
-  padding: 15px 0;
-  background: none;
-  border-radius: 0;
-  border: none;
-  border-bottom: 1px solid rgba(256, 256, 256, 0.5);
-}
-
+.contact .contact-form input,
 .contact .contact-form textarea {
   color: #ffffff;
-  height: 90px;
   padding: 15px 0;
   background: none;
   border-radius: 0;
@@ -1346,7 +1081,7 @@ a:focus {
 
 .contact .contact-form .btn {
   margin-top: 35px;
-  color: #ef233c;
+  color: #CD5C08;
   background: #ffffff;
   box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -1377,80 +1112,7 @@ a:focus {
   }
 }
 
-/*******************************/
-/*********** Blog CSS **********/
-/*******************************/
-.blog {
-  position: relative;
-  width: 100%;
-  padding: 45px 0 15px 0;
-}
 
-.blog .blog-item {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.blog .blog-img {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.blog .blog-img img {
-  width: 100%;
-  transition: 0.5s;
-}
-
-.blog .blog-item:hover img {
-  transform: scale(1.1);
-}
-
-.blog .blog-text {
-  position: relative;
-  padding: 30px;
-  border-right: 1px solid rgba(0, 0, 0, 0.07);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  border-left: 1px solid rgba(0, 0, 0, 0.07);
-}
-
-.blog .blog-text h2 {
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.blog .blog-text p {
-  margin-bottom: 10px;
-}
-
-.blog .blog-item a.btn {
-  margin-top: 10px;
-  padding: 8px 15px;
-}
-
-.blog .blog-item a.btn i {
-  margin-left: 5px;
-}
-
-.blog .blog-meta {
-  position: relative;
-  display: flex;
-  margin-bottom: 15px;
-}
-
-.blog .blog-meta p {
-  margin: 0 10px 0 0;
-  font-size: 13px;
-}
-
-.blog .blog-meta i {
-  color: #414141;
-  margin-right: 5px;
-}
-
-.blog .blog-meta p:last-child {
-  margin: 0;
-}
 
 /*******************************/
 /********* Footer CSS **********/
@@ -1458,7 +1120,7 @@ a:focus {
 .footer {
   position: relative;
   margin-top: 45px;
-  background: #ef233c;
+  background: black;
 }
 
 .footer .container-fluid {
