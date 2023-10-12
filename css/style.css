@@ -952,6 +952,90 @@ a:focus {
   box-shadow: inset 0 0 0 0 #ffffff;
   border-color: #ffffff;
 }
+/*******************************/
+/******** Certification CSS ******/
+/*******************************/
+
+.certification {
+  position: relative;
+  padding: 45px 0 15px 0;
+  background: white; /* Set background color to white */
+}
+
+.certification .section-header {
+  margin-bottom: 45px;
+}
+
+.certification .section-header p {
+  display: inline-block;
+  margin: 0 30px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #CD5C08; /* Set background color to the site's accent color */
+  color: white; /* Set text color to white */
+}
+
+.certification .section-header h2 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.certification .certification-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.certification .certification-img {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.certification .certification-img img {
+  width: 100%;
+  height: auto;
+}
+
+.certification .certification-text {
+  position: relative;
+  padding: 15px;
+  background: #f8f9fa; /* Set a light gray background color */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.certification .certification-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.certification .certification-text p {
+  margin: 0;
+  font-size: 16px;
+  color: #333; /* Set text color to a dark gray matching the site */
+}
+
+.certification .certification-link a {
+  color: #CD5C08; /* Set link color to the site's accent color */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.certification .certification-link a:hover {
+  color: #414141; /* Change link color on hover */
+}
+
+@media (max-width: 767.98px) {
+  .certification .section-header h2 {
+    font-size: 30px;
+  }
+}
 
 
 /*******************************/
